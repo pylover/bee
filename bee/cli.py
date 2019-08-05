@@ -103,7 +103,7 @@ class Login(SubCommand):
 
 
 class Bee(Root):
-    __help__ = 'Sharedlists client'
+    __help__ = 'Hive client'
     __completion__ = True
     __arguments__ = [
         Login,

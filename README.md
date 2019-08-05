@@ -11,7 +11,7 @@ bee --help
 ```
 usage: bee [-h] {login,show,s,l,info,i,append,add,a,delete,d,completion} ...
 
-Sharedlists client
+Hive client
 
 optional arguments:
   -h, --help            show this help message and exit
