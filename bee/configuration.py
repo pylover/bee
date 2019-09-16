@@ -13,19 +13,17 @@ BUILTINSETTINGS = '''
   token:
 '''
 
+def dump():
+    with open(CONFIGFILE, 'w') as f:
+        f.write(settings.dumps())
+
 
 settings = DeferredRoot()
 def initialize():
     settings.initialize(BUILTINSETTINGS)
     if not path.exists(CONFIGFILE):
-        dump_config()
+        dump()
     else:
         settings.loadfile(CONFIGFILE)
-
-
-def dump():
-    with open(CONFIGFILE, 'w') as f:
-        f.write(settings.dumps())
-
 
 
