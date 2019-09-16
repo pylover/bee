@@ -20,7 +20,7 @@ def initialize():
     if not path.exists(CONFIGFILE):
         dump_config()
     else:
-        settings.load_file(CONFIGFILE)
+        settings.loadfile(CONFIGFILE)
 
 
 def dump():

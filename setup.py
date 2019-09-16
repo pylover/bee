@@ -13,7 +13,7 @@ with open(join(dirname(__file__), 'bee', '__init__.py')) as v_file:
 dependencies = [
     'requests',
     'easycli',
-    'pymlconf',
+    'pymlconf >= 2',
 
     # Deployment
     'gunicorn',
